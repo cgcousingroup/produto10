@@ -56,7 +56,7 @@ def gerar_qrcode_pix(chave, nome, cidade, valor=None, descricao=None):
 
 TOKEN = '7672360069:AAFrSEEMHYRofNnyWR3jYiCbqPwyJR-LY04'
 SUPORTE_USERNAME = '@supvipoficial'
-CHAVE_PIX = '5a5dc31f-f8a0-4711-9268-ba923769b518'
+CHAVE_PIX = 'suportegchave@gmail.com'
 NOME = 'CGCOUSIN'
 CIDADE = 'SAO PAULO'
 DESCRICAO = 'PRODUTO10'
