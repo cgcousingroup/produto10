@@ -59,10 +59,10 @@ SUPORTE_USERNAME = '@supvipoficial'
 CHAVE_PIX = 'suportegchave@gmail.com'
 NOME = 'CGCOUSIN'
 CIDADE = 'SAO PAULO'
-DESCRICAO = 'PRODUTO10'
+DESCRICAO = 'CLUBEDO1'
 VALOR_NORMAL = 1.00
 VALOR_PROMO = 5.00
-DESCRICAO_PROMO = 'VIPENTRADA'
+DESCRICAO_PROMO = 'VIPCLUBE1'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     bio, payload = gerar_qrcode_pix(CHAVE_PIX, NOME, CIDADE, valor=VALOR_NORMAL, descricao=DESCRICAO)
