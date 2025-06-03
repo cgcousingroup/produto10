@@ -60,13 +60,13 @@ CHAVE_PIX = '5a5dc31f-f8a0-4711-9268-ba923769b518'
 NOME = 'CGCOUSIN'
 CIDADE = 'SAO PAULO'
 DESCRICAO = 'CLUBEDO1'
-VALOR_NORMAL = 1.00
+VALOR_NORMAL = 10.00
 VALOR_PROMO = 5.00
-DESCRICAO_PROMO = 'VIPCLUBE1'
+DESCRICAO_PROMO = 'PRODUTO10'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     bio, payload = gerar_qrcode_pix(CHAVE_PIX, NOME, CIDADE, valor=VALOR_NORMAL, descricao=DESCRICAO)
-    await update.message.reply_photo(photo=bio, caption="Escaneie o QRCode para pagar VIP R$ 1,00. Depois envie o comprovante para: @supvipoficial")
+    await update.message.reply_photo(photo=bio, caption="Escaneie o QRCode para pagar VIP R$ 10,00. Depois envie o comprovante para: @supvipoficial")
     await update.message.reply_text(f"Código Pix para copiar:\n\n`{payload}`", parse_mode='MarkdownV2')
 
     # Agendar a oferta com vídeo e botão após 5 minutos (300 segundos)
